@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>HTML5 e CSS3: Parte 1</title>
+    <style>
+        h1 {
+            font-family: cursive;  
+        }
+
+        p {
+            font-family: cursive;
+            font-size: x-large; 
+            line-height:300%;        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 e CSS3: Parte 1</h1>
+
+        <p>Favicon: <br> <img src="favicon_100x100.png" alt=""></p>
+
+        <p>
+            Imagem dinâmica: <br>
+            <picture>
+                <source media="(max-width: 750px)" srcset="flor_p_300.jpg" type="image/jpeg">
+                <source media="(max-width: 1050px)" srcset="flor_m_700.jpg" type="image/jpeg">
+                <img style="width: 100%" src="flor_g_1000.jpg" alt="">
+            </picture>
+        </p>
+
+        <p>
+            Áudio: <br>
+            <audio preload="metadata" controls> <!--autoplay e loop podem ser adicionados-->
+                <source src="natal_remix.mp3" type="audio/mpeg">
+                <source src="natal_remix.wav" type="audio/wav">
+            </audio>
+        </p>
+
+        <p>
+            Vídeo hospedado: <br>
+            <video width="100%" poster="poster_natal.jpg" controls preload="metadata">
+                <source src="natal.webm" type="video/webm">
+                <source src="natal.mp4" type="video/mp4">
+                <source src="natal.ogv" type="video/ogg">
+            </video>
+        </p>
+
+        <p>
+            Vídeo externo: <br>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/a7OpJvQf6zA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+
+        <p>Quebrar linha: tag <strong>&lt;br&gt;</strong</p>
+</body>
+</html>
